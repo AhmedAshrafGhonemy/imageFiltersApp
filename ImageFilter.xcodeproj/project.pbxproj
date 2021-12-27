@@ -11,6 +11,10 @@
 		FAD4304527736B470054B5AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4304427736B470054B5AF /* ContentView.swift */; };
 		FAD4304727736B490054B5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4304627736B490054B5AF /* Assets.xcassets */; };
 		FAD4304A27736B490054B5AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4304927736B490054B5AF /* Preview Assets.xcassets */; };
+		FAD4305427737D450054B5AF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4305327737D440054B5AF /* Home.swift */; };
+		FAD4305627737D660054B5AF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4305527737D660054B5AF /* HomeViewModel.swift */; };
+		FAD4305827737F630054B5AF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4305727737F630054B5AF /* ImagePicker.swift */; };
+		FAD4305A27739BAB0054B5AF /* FilteredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4305927739BAB0054B5AF /* FilteredImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		FAD4304427736B470054B5AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAD4304627736B490054B5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD4304927736B490054B5AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAD4305327737D440054B5AF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FAD4305527737D660054B5AF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FAD4305727737F630054B5AF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FAD4305927739BAB0054B5AF /* FilteredImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredImage.swift; sourceTree = "<group>"; };
+		FAD4305B2773C27A0054B5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,10 @@
 		FAD4304127736B470054B5AF /* ImageFilter */ = {
 			isa = PBXGroup;
 			children = (
+				FAD4305B2773C27A0054B5AF /* Info.plist */,
+				FAD4305227736DD80054B5AF /* ViewModel */,
+				FAD4305127736DC50054B5AF /* Model */,
+				FAD4305027736DBA0054B5AF /* View */,
 				FAD4304227736B470054B5AF /* ImageFilterApp.swift */,
 				FAD4304427736B470054B5AF /* ContentView.swift */,
 				FAD4304627736B490054B5AF /* Assets.xcassets */,
@@ -65,6 +78,31 @@
 				FAD4304927736B490054B5AF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAD4305027736DBA0054B5AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4305327737D440054B5AF /* Home.swift */,
+				FAD4305727737F630054B5AF /* ImagePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD4305127736DC50054B5AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4305927739BAB0054B5AF /* FilteredImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAD4305227736DD80054B5AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4305527737D660054B5AF /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD4305A27739BAB0054B5AF /* FilteredImage.swift in Sources */,
 				FAD4304527736B470054B5AF /* ContentView.swift in Sources */,
+				FAD4305427737D450054B5AF /* Home.swift in Sources */,
+				FAD4305827737F630054B5AF /* ImagePicker.swift in Sources */,
 				FAD4304327736B470054B5AF /* ImageFilterApp.swift in Sources */,
+				FAD4305627737D660054B5AF /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +314,8 @@
 				DEVELOPMENT_TEAM = 2QM8AH6293;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageFilter/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +345,8 @@
 				DEVELOPMENT_TEAM = 2QM8AH6293;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageFilter/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
